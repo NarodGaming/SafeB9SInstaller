@@ -5,13 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     container: devkitpro/devkitarm:latest
     steps:
-      * name: Checkout
+      name: Checkout
         uses: actions/checkout@v4
-      * name: Build
+      name: Build
         run: make
-      * name: List Files
+      name: List Files
         run: ls -R
-      * name: Upload
+      name: Upload
         uses: actions/upload-artifact@v4
         with:
           name: SafeB9SInstaller-Build
